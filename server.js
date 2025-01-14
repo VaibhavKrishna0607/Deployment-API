@@ -7,6 +7,8 @@ app.get('/', (_req, res) => {
     res.send("API is live!");
 });
 
+
+
 app.post('/api/data', (req, res) => {
     const {name,age} = req.body;
     res.json({message:`Hello ${name} your age is ${age}`})
